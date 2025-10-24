@@ -29,10 +29,11 @@ const movie6 = new movie(9, "Greatererererer Grandson of the Mask", 2082, -1.2);
 const movie2 = new movie(10, "Greaterererererer Grandson of the Mask", 2093, -5.0);
 
 // Creates an array and stores the movies inside it
-let maskMovies = [
+const maskMovies = [
   movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10
 ];
 // Logs out the array
+maskMovies.forEach(m => console.log(m.movieID));
 console.log(maskMovies);
 
 // Sorts the array by movieID in ascending order
