@@ -34,3 +34,8 @@ const maskMovies = [
 ];
 // Logs out the array
 console.log(maskMovies);
+
+// Sorts the array by movieID in ascending order
+const sortedMaskMovies = maskMovies.sort((a, b) => a.movieID - b.movieID);
+// Logs out the sorted array
+console.log(sortedMaskMovies);
