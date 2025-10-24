@@ -39,3 +39,33 @@ console.log(maskMovies);
 const sortedMaskMovies = maskMovies.sort((a, b) => a.movieID - b.movieID);
 // Logs out the sorted array
 console.log(sortedMaskMovies);
+
+// Defines the function for linear searching through an array and then returning the index of the specified target
+function sequentialSearch(arraySearch, targetID) {
+  // Create a found variable and set it to null
+  let found = null;
+  // Log out the array being searched and the targetID of the movie we are locating
+  console.log("Array to search:");
+  console.log(arraySearch);
+  console.log(`Target to find: ${targetID}`);
+  // Loop through the array
+  for (let i = 0; i < arraySearch.length; i++) {
+    // log out the current element
+    console.log(`arraySearch[${i}]:`);
+    console.log(arraySearch[i]);
+    // Test to see we have found the targetID
+    if (arraySearch[i].movieID == targetID) {
+      found = i;
+      console.log("Found Target: ")
+      break;
+    }
+  }
+  // If there is no found target, return null
+  if (found == null){
+    return found;
+  }
+  // If there is a target found, return the found object from the array
+  return arraySearch[found];
+};
+// Calls the function and logs out the result
+console.log(sequentialSearch(maskMovies, 7));
