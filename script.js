@@ -33,4 +33,4 @@ const maskMovies = [
   movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10
 ];
 // Logs out the array
-console.log("The array of movies is: " + maskMovies);
+console.log(maskMovies);
