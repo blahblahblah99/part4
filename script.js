@@ -33,10 +33,9 @@ const maskMovies = [
   movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10
 ];
 // Logs out the array
-maskMovies.forEach(m => console.log(m.movieID));
 console.log(maskMovies);
 
 // Sorts the array by movieID in ascending order
-maskMovies = maskMovies.sort((a, b) => a.movieID - b.movieID);
+const sortedMaskMovies = maskMovies.sort((a, b) => a.movieID - b.movieID);
 // Logs out the sorted array
-console.log(maskMovies);
+console.log(sortedMaskMovies);
