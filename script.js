@@ -13,3 +13,5 @@ class movie {
     this.rating = rating;
   }
 }
+// Logs out the movie class
+console.log(movie);
